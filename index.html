@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Clínica Veterinaria Argos · Veterinario en Torrejón de la Calzada</title>
+<meta name="description" content="Clínica Veterinaria Argos en Calle Real, 52, Torrejón de la Calzada (Madrid). Más de 20 años cuidando de perros y gatos. Pide cita: 918 16 98 34.">
+<meta name="theme-color" content="#0f5c4d">
+<meta property="og:title" content="Clínica Veterinaria Argos · Torrejón de la Calzada">
+<meta property="og:description" content="Tu clínica veterinaria de confianza en Torrejón de la Calzada. 4,6★ en Google con más de 360 opiniones.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Datos estructurados para Google (SEO local) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VeterinaryCare",
+  "name": "Clínica Veterinaria Argos",
+  "telephone": "+34918169834",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle Real, 52",
+    "postalCode": "28991",
+    "addressLocality": "Torrejón de la Calzada",
+    "addressRegion": "Madrid",
+    "addressCountry": "ES"
+  },
+  "geo": {"@type": "GeoCoordinates", "latitude": 40.1986726, "longitude": -3.8008299},
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "13:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "17:00", "closes": "19:30"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "12:00"}
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --verde:#0f5c4d;
+    --verde-2:#14796a;
+    --menta:#d9f2ea;
+    --crema:#fff8ef;
+    --arena:#f6ead8;
+    --coral:#ff7a59;
+    --tinta:#1d2b28;
+    --gris:#5d6b68;
+    --blanco:#ffffff;
+    --radio:22px;
+    --sombra:0 10px 30px rgba(15,92,77,.12);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Nunito",system-ui,-apple-system,sans-serif;
+    color:var(--tinta);
+    background:var(--crema);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    padding-bottom:84px; /* hueco para la barra fija del móvil */
+  }
+  h1,h2,h3{font-family:"Fraunces",Georgia,serif;line-height:1.15;letter-spacing:-.01em}
+  a{color:inherit;text-decoration:none}
+  img,svg{display:block;max-width:100%}
+  .wrap{width:min(1100px,100% - 40px);margin-inline:auto}
+  section{padding:64px 0}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-weight:800;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--verde-2);
+  }
+  .eyebrow::before{content:"";width:18px;height:2px;background:var(--coral);border-radius:2px}
+  .sec-title{font-size:clamp(1.8rem,6vw,2.6rem);margin:10px 0 14px}
+  .sec-sub{color:var(--gris);max-width:560px}
+
+  /* ---------- Cabecera ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,248,239,.86);
+    backdrop-filter:saturate(1.4) blur(12px);
+    -webkit-backdrop-filter:saturate(1.4) blur(12px);
+    border-bottom:1px solid rgba(15,92,77,.08);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{display:flex;align-items:center;gap:10px;font-family:"Fraunces",serif;font-weight:700;font-size:1.25rem;color:var(--verde)}
+  .logo-mark{width:38px;height:38px;border-radius:12px;background:var(--verde);display:grid;place-items:center}
+  .logo small{display:block;font-family:"Nunito",sans-serif;font-weight:700;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gris);margin-top:-2px}
+  .status-pill{
+    display:inline-flex;align-items:center;gap:7px;
+    font-size:.78rem;font-weight:800;
+    padding:7px 12px;border-radius:999px;
+    background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06);
+    white-space:nowrap;
+  }
+  .dot{width:9px;height:9px;border-radius:50%;background:#bbb}
+  .open .dot{background:#22c55e;box-shadow:0 0 0 0 rgba(34,197,94,.6);animation:pulse 1.8s infinite}
+  .closed .dot{background:#ef4444}
+  @keyframes pulse{70%{box-shadow:0 0 0 9px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}
+  .desk-links{display:none;gap:26px;font-weight:700;font-size:.95rem}
+  .desk-links a:hover{color:var(--verde-2)}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;overflow:hidden;padding:34px 0 56px;background:
+      radial-gradient(120% 70% at 100% 0%, var(--menta) 0%, transparent 60%),
+      radial-gradient(90% 60% at 0% 100%, var(--arena) 0%, transparent 60%);
+  }
+  .hero-grid{display:grid;gap:28px;align-items:center}
+  .badge-google{
+    display:inline-flex;align-items:center;gap:10px;background:#fff;
+    padding:8px 14px 8px 8px;border-radius:999px;box-shadow:var(--sombra);
+    font-weight:800;font-size:.86rem;
+  }
+  .badge-google .g{width:28px;height:28px;border-radius:50%;background:#fff;border:1px solid #eee;display:grid;place-items:center;font-weight:900;color:#4285F4;font-family:Arial,sans-serif}
+  .stars{color:#f5a623;letter-spacing:1px}
+  .hero h1{font-size:clamp(2.3rem,10vw,4rem);margin:18px 0 14px;color:var(--verde)}
+  .hero h1 em{font-style:italic;color:var(--coral)}
+  .hero p.lead{font-size:1.08rem;color:var(--gris);max-width:520px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:9px;
+    font-weight:800;font-size:1rem;border-radius:16px;padding:15px 22px;
+    transition:transform .15s ease, box-shadow .2s ease, background .2s;
+    border:0;cursor:pointer;font-family:inherit;
+  }
+  .btn:active{transform:scale(.97)}
+  .btn-primary{background:var(--verde);color:#fff;box-shadow:0 10px 24px rgba(15,92,77,.28)}
+  .btn-primary:hover{background:var(--verde-2)}
+  .btn-ghost{background:#fff;color:var(--verde);box-shadow:var(--sombra)}
+  .btn svg{width:20px;height:20px}
+
+  .hero-art{position:relative;aspect-ratio:1/1;max-width:420px;margin-inline:auto;width:100%}
+  .blob{position:absolute;inset:6%;border-radius:42% 58% 55% 45% / 48% 42% 58% 52%;background:linear-gradient(140deg,var(--verde-2),var(--verde));animation:morph 12s ease-in-out infinite}
+  @keyframes morph{50%{border-radius:58% 42% 45% 55% / 42% 58% 42% 58%}}
+  .hero-art .pets{position:absolute;inset:0;display:grid;place-items:center}
+  .float-card{
+    position:absolute;background:#fff;border-radius:16px;padding:10px 14px;
+    box-shadow:var(--sombra);font-weight:800;font-size:.85rem;display:flex;align-items:center;gap:8px;
+    animation:bob 4s ease-in-out infinite;
+  }
+  .float-card .ic{width:30px;height:30px;border-radius:10px;display:grid;place-items:center;background:var(--menta);font-size:1rem}
+  .fc1{top:8%;left:-2%}
+  .fc2{bottom:10%;right:-2%;animation-delay:-2s}
+  @keyframes bob{50%{transform:translateY(-8px)}}
+
+  /* huellas animadas */
+  .paws{position:absolute;inset:0;pointer-events:none;opacity:.10}
+  .paw{position:absolute;width:26px;height:26px;fill:var(--verde);animation:pawfade 6s ease-in-out infinite}
+  @keyframes pawfade{0%,100%{opacity:0}30%,70%{opacity:1}}
+
+  /* ---------- Cifras ---------- */
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:30px}
+  .stat{background:#fff;border-radius:18px;padding:14px 10px;text-align:center;box-shadow:0 4px 16px rgba(15,92,77,.07)}
+  .stat b{display:block;font-family:"Fraunces",serif;font-size:1.6rem;color:var(--verde)}
+  .stat span{font-size:.76rem;color:var(--gris);font-weight:700}
+
+  /* ---------- Historia Argos ---------- */
+  .story{background:var(--verde);color:#eafff8;border-radius:30px;padding:30px 24px;position:relative;overflow:hidden}
+  .story h2{color:#fff;font-size:clamp(1.6rem,6vw,2.2rem);margin:8px 0 12px}
+  .story .eyebrow{color:#9ff0d6}
+  .story p{opacity:.92}
+  .story .big-paw{position:absolute;right:-30px;bottom:-30px;width:180px;opacity:.12;fill:#fff}
+
+  /* ---------- Servicios ---------- */
+  .services{display:grid;gap:14px;margin-top:28px}
+  .svc{
+    background:#fff;border-radius:var(--radio);box-shadow:0 4px 18px rgba(15,92,77,.07);
+    overflow:hidden;transition:box-shadow .2s;
+  }
+  .svc button{
+    all:unset;cursor:pointer;display:flex;align-items:center;gap:14px;width:100%;
+    padding:18px;box-sizing:border-box;
+  }
+  .svc .ico{flex:none;width:50px;height:50px;border-radius:16px;display:grid;place-items:center;background:var(--menta);font-size:1.5rem;transition:transform .3s}
+  .svc h3{font-family:"Nunito",sans-serif;font-weight:800;font-size:1.05rem}
+  .svc .mini{font-size:.86rem;color:var(--gris)}
+  .svc .chev{margin-left:auto;transition:transform .3s;color:var(--verde)}
+  .svc .body{max-height:0;overflow:hidden;transition:max-height .35s ease;padding:0 18px}
+  .svc .body p{padding:0 0 18px 64px;color:var(--gris);font-size:.95rem}
+  .svc.open{box-shadow:var(--sombra)}
+  .svc.open .chev{transform:rotate(180deg)}
+  .svc.open .ico{transform:rotate(-8deg) scale(1.06)}
+
+  /* ---------- Calculadora edad ---------- */
+  .calc{background:#fff;border-radius:30px;box-shadow:var(--sombra);padding:24px;margin-top:26px}
+  .seg{display:grid;grid-template-columns:1fr 1fr;background:var(--arena);border-radius:16px;padding:5px;gap:5px}
+  .seg button{border:0;background:transparent;font:inherit;font-weight:800;padding:12px;border-radius:12px;cursor:pointer;color:var(--gris);transition:.2s}
+  .seg button.on{background:#fff;color:var(--verde);box-shadow:0 3px 10px rgba(0,0,0,.08)}
+  .sizes{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+  .chip{border:2px solid #e8dfd2;background:#fff;font:inherit;font-weight:700;font-size:.88rem;padding:8px 14px;border-radius:999px;cursor:pointer;transition:.2s}
+  .chip.on{border-color:var(--verde);background:var(--menta);color:var(--verde)}
+  .range-row{margin-top:22px}
+  .range-row label{font-weight:800;display:flex;justify-content:space-between}
+  input[type=range]{width:100%;margin-top:12px;accent-color:var(--verde);height:28px}
+  .result{
+    margin-top:18px;border-radius:20px;padding:18px;text-align:center;
+    background:linear-gradient(135deg,var(--menta),#f0fbf7);
+  }
+  .result .num{font-family:"Fraunces",serif;font-size:3rem;color:var(--verde);line-height:1;display:block}
+  .result .stage{font-weight:800;margin-top:6px}
+  .result .tip{font-size:.88rem;color:var(--gris);margin-top:6px}
+  .disclaimer{font-size:.75rem;color:var(--gris);margin-top:10px;text-align:center}
+
+  /* ---------- Opiniones ---------- */
+  .reviews-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .score{display:flex;align-items:center;gap:14px;background:#fff;border-radius:20px;padding:14px 18px;box-shadow:0 4px 18px rgba(15,92,77,.07)}
+  .score b{font-family:"Fraunces",serif;font-size:2.4rem;color:var(--verde);line-height:1}
+  .score small{display:block;color:var(--gris);font-weight:700;font-size:.8rem}
+  .bars{margin-top:18px;display:grid;gap:6px;max-width:420px}
+  .bar{display:grid;grid-template-columns:22px 1fr 34px;align-items:center;gap:8px;font-size:.8rem;font-weight:700;color:var(--gris)}
+  .bar i{display:block;height:8px;border-radius:8px;background:#ece3d6;overflow:hidden}
+  .bar i::after{content:"";display:block;height:100%;width:var(--w);background:#f5a623;border-radius:8px;transform-origin:left;transform:scaleX(0);transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+  .bars.go .bar i::after{transform:scaleX(1)}
+  .slider{margin-top:24px;display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 20px 18px;margin-inline:-20px;scrollbar-width:none}
+  .slider::-webkit-scrollbar{display:none}
+  .review{
+    flex:0 0 86%;scroll-snap-align:center;background:#fff;border-radius:var(--radio);
+    padding:20px;box-shadow:0 4px 18px rgba(15,92,77,.08);display:flex;flex-direction:column;gap:12px
+  }
+  .review p{font-size:.97rem}
+  .review .who{display:flex;align-items:center;gap:10px;margin-top:auto}
+  .avatar{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff}
+  .who b{display:block;font-size:.92rem}
+  .who small{color:var(--gris);font-size:.78rem}
+  .dots{display:flex;justify-content:center;gap:7px}
+  .dots button{width:8px;height:8px;border-radius:8px;border:0;background:#d8cfc2;cursor:pointer;transition:.3s;padding:0}
+  .dots button.on{width:24px;background:var(--verde)}
+
+  /* ---------- Equipo ---------- */
+  .team{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}
+  .member{text-align:center}
+  .member .ph{aspect-ratio:1;border-radius:24px;display:grid;place-items:center;font-family:"Fraunces",serif;font-size:2rem;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+  .member b{display:block;margin-top:8px}
+  .member small{color:var(--gris);font-size:.78rem}
+
+  /* ---------- Horario y mapa ---------- */
+  .visit{display:grid;gap:18px;margin-top:26px}
+  .card{background:#fff;border-radius:var(--radio);padding:22px;box-shadow:0 4px 18px rgba(15,92,77,.07)}
+  .hours li{list-style:none;display:flex;justify-content:space-between;padding:11px 12px;border-radius:12px;font-weight:600}
+  .hours li:nth-child(odd){background:#faf6f0}
+  .hours li.today{background:var(--verde);color:#fff;font-weight:800}
+  .hours li{align-items:center}
+  .hours li span:last-child{text-align:right;font-variant-numeric:tabular-nums}
+  .hoy{font-style:normal;font-size:.68rem;font-weight:900;letter-spacing:.08em;background:var(--coral);color:#fff;padding:2px 7px;border-radius:999px;margin-left:6px;vertical-align:2px}
+  .map{border-radius:var(--radio);overflow:hidden;box-shadow:var(--sombra);aspect-ratio:4/3;background:var(--menta)}
+  .map iframe{width:100%;height:100%;border:0}
+  .addr{display:flex;gap:12px;align-items:flex-start;margin-top:4px}
+  .addr .ic{flex:none;width:42px;height:42px;border-radius:14px;background:var(--menta);display:grid;place-items:center}
+
+  /* ---------- FAQ ---------- */
+  .faq{margin-top:22px;display:grid;gap:10px}
+  details{background:#fff;border-radius:18px;padding:4px 18px;box-shadow:0 3px 14px rgba(15,92,77,.06)}
+  summary{cursor:pointer;list-style:none;font-weight:800;padding:14px 0;display:flex;justify-content:space-between;gap:10px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--verde);transition:.3s}
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{padding:0 0 16px;color:var(--gris)}
+
+  /* ---------- CTA final y pie ---------- */
+  .final{background:linear-gradient(140deg,var(--verde-2),var(--verde));color:#fff;border-radius:30px;padding:34px 24px;text-align:center}
+  .final h2{font-size:clamp(1.7rem,6vw,2.4rem);margin-bottom:10px}
+  .final .btn-ghost{margin-top:18px}
+  footer{padding:36px 0 20px;color:var(--gris);font-size:.85rem;text-align:center}
+
+  /* ---------- Barra fija móvil ---------- */
+  .dock{
+    position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;
+    display:grid;grid-template-columns:1fr 1fr;gap:10px;
+    background:rgba(255,255,255,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+    padding:8px;border-radius:22px;box-shadow:0 12px 34px rgba(0,0,0,.16);
+    transform:translateY(140%);transition:transform .4s cubic-bezier(.2,.8,.2,1);
+  }
+  .dock.show{transform:none}
+  .dock .btn{padding:14px 10px;font-size:.95rem}
+
+  /* ---------- Animaciones de entrada ---------- */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important}
+    .reveal{opacity:1;transform:none}
+  }
+
+  /* ---------- Escritorio ---------- */
+  @media (min-width:860px){
+    body{padding-bottom:0}
+    .desk-links{display:flex}
+    .hero{padding:60px 0 80px}
+    .hero-grid{grid-template-columns:1.1fr .9fr}
+    .services{grid-template-columns:1fr 1fr}
+    .visit{grid-template-columns:1fr 1.2fr}
+    .review{flex-basis:calc(33.333% - 10px)}
+    .dock{display:none}
+    .calc-wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .story{padding:48px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ CABECERA ============ -->
+<header>
+  <div class="wrap nav">
+    <a href="#inicio" class="logo" aria-label="Clínica Veterinaria Argos, inicio">
+      <span class="logo-mark">
+        <svg width="22" height="22" viewBox="0 0 64 64" fill="#fff" aria-hidden="true"><ellipse cx="18" cy="22" rx="6" ry="8"/><ellipse cx="46" cy="22" rx="6" ry="8"/><ellipse cx="8" cy="36" rx="5" ry="7"/><ellipse cx="56" cy="36" rx="5" ry="7"/><path d="M32 30c-9 0-17 12-17 19 0 6 5 8 9 7 3-1 5-2 8-2s5 1 8 2c4 1 9-1 9-7 0-7-8-19-17-19z"/></svg>
+      </span>
+      <span>Argos<small>Clínica veterinaria</small></span>
+    </a>
+    <nav class="desk-links" aria-label="Secciones">
+      <a href="#servicios">Servicios</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#visitanos">Horario</a>
+      <a href="#faq">Preguntas</a>
+    </nav>
+    <span id="status" class="status-pill" aria-live="polite"><span class="dot"></span><span class="txt">Horario</span></span>
+  </div>
+</header>
+
+<main id="inicio">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="paws" aria-hidden="true" id="paws"></div>
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <a class="badge-google" href="#opiniones">
+        <span class="g">G</span>
+        <span><span class="stars">★★★★★</span> 4,6 · 367 opiniones</span>
+      </a>
+      <h1>Tu mascota, en manos <em>de familia</em>.</h1>
+      <p class="lead">Más de 20 años cuidando de los perros y gatos de Torrejón de la Calzada. Cercanos, sin prisas y siempre explicándote todo.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+34918169834">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          Pedir cita
+        </a>
+        <a class="btn btn-ghost" href="#visitanos">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          Cómo llegar
+        </a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b data-count="20" data-prefix="+">0</b><span>años de experiencia</span></div>
+        <div class="stat"><b data-count="4.6" data-dec="1">0</b><span>nota en Google</span></div>
+        <div class="stat"><b data-count="305">0</b><span>opiniones de 5★</span></div>
+      </div>
+    </div>
+
+    <div class="hero-art reveal" aria-hidden="true">
+      <div class="blob"></div>
+      <div class="pets">
+        <!-- Ilustración propia (perro + gato). Se puede sustituir por una foto real de la clínica. -->
+        <svg viewBox="0 0 300 300" width="78%">
+          <!-- perro -->
+          <g transform="translate(40 70)">
+            <ellipse cx="80" cy="190" rx="70" ry="10" fill="rgba(0,0,0,.12)"/>
+            <path d="M40 120c0-40 25-70 55-70s55 30 55 70v55H40z" fill="#f2c48d"/>
+            <path d="M55 70c-20-5-35 15-30 45 15 0 25-15 30-45z" fill="#c98b4f"/>
+            <path d="M135 70c20-5 35 15 30 45-15 0-25-15-30-45z" fill="#c98b4f"/>
+            <circle cx="95" cy="95" r="45" fill="#f7d3a5"/>
+            <circle cx="78" cy="88" r="6" fill="#1d2b28"/><circle cx="112" cy="88" r="6" fill="#1d2b28"/>
+            <circle cx="80" cy="86" r="2" fill="#fff"/><circle cx="114" cy="86" r="2" fill="#fff"/>
+            <ellipse cx="95" cy="108" rx="10" ry="7" fill="#1d2b28"/>
+            <path d="M85 118q10 10 20 0" stroke="#1d2b28" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M95 124q0 14 8 14q8 0 6-12" fill="#ff7a59"/>
+            <rect x="60" y="138" width="70" height="10" rx="5" fill="#ff7a59"/>
+            <circle cx="95" cy="154" r="8" fill="#ffd166"/>
+          </g>
+          <!-- gato -->
+          <g transform="translate(170 130)">
+            <ellipse cx="45" cy="132" rx="45" ry="7" fill="rgba(0,0,0,.12)"/>
+            <path d="M10 130c0-35 15-60 35-60s35 25 35 60z" fill="#8a9ba8"/>
+            <path d="M80 120c25 0 25-35 10-40" stroke="#8a9ba8" stroke-width="10" fill="none" stroke-linecap="round"/>
+            <path d="M15 40l5-35 22 25z M75 40l-5-35-22 25z" fill="#8a9ba8"/>
+            <circle cx="45" cy="50" r="32" fill="#a7b6c1"/>
+            <path d="M22 18l3-10 8 10z M68 18l-3-10-8 10z" fill="#ffb3a7"/>
+            <ellipse cx="34" cy="48" rx="5" ry="7" fill="#1d2b28"/><ellipse cx="56" cy="48" rx="5" ry="7" fill="#1d2b28"/>
+            <circle cx="35" cy="45" r="1.8" fill="#fff"/><circle cx="57" cy="45" r="1.8" fill="#fff"/>
+            <path d="M41 60l4 4 4-4z" fill="#ff7a59"/>
+            <path d="M20 62h14M20 68h14M56 62h14M56 68h14" stroke="#eef3f6" stroke-width="1.6" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </div>
+      <div class="float-card fc1"><span class="ic">💉</span>Vacunas al día</div>
+      <div class="float-card fc2"><span class="ic">❤️</span>Trato de familia</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HISTORIA ============ -->
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="story reveal">
+      <svg class="big-paw" viewBox="0 0 64 64" aria-hidden="true"><ellipse cx="18" cy="22" rx="6" ry="8"/><ellipse cx="46" cy="22" rx="6" ry="8"/><ellipse cx="8" cy="36" rx="5" ry="7"/><ellipse cx="56" cy="36" rx="5" ry="7"/><path d="M32 30c-9 0-17 12-17 19 0 6 5 8 9 7 3-1 5-2 8-2s5 1 8 2c4 1 9-1 9-7 0-7-8-19-17-19z"/></svg>
+      <span class="eyebrow">¿Por qué Argos?</span>
+      <h2>Argos fue el perro más fiel de la historia.</h2>
+      <p>En la Odisea, Argos esperó veinte años a que su dueño volviera a casa. Esa fidelidad es la que queremos devolver a tus animales: los conocemos por su nombre, recordamos su historia y les acompañamos desde la primera vacuna hasta la vejez.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICIOS ============ -->
+<!-- CONFIRMAR CON LA CLÍNICA: la lista de servicios se ha deducido de sus reseñas en Google.
+     Añadir o quitar según lo que ofrezcan realmente. -->
+<section id="servicios">
+  <div class="wrap">
+    <span class="eyebrow reveal">Servicios</span>
+    <h2 class="sec-title reveal">Todo lo que necesita, en una sola clínica</h2>
+    <p class="sec-sub reveal">Toca cada servicio para ver más.</p>
+
+    <div class="services">
+      <div class="svc reveal">
+        <button aria-expanded="false"><span class="ico">🩺</span><span><h3>Consulta general</h3><span class="mini">Revisiones y diagnóstico</span></span><svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="body"><p>Revisamos a tu mascota con calma, te explicamos lo que vemos y te damos un plan claro. Si algo no va bien, lo detectamos a tiempo.</p></div>
+      </div>
+      <div class="svc reveal">
+        <button aria-expanded="false"><span class="ico">💉</span><span><h3>Vacunación y desparasitación</h3><span class="mini">Cachorros, gatitos y adultos</span></span><svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="body"><p>Te ayudamos a llevar al día el calendario de vacunas y la desparasitación interna y externa, adaptado a la edad y estilo de vida de tu animal.</p></div>
+      </div>
+      <div class="svc reveal">
+        <button aria-expanded="false"><span class="ico">🔬</span><span><h3>Análisis y pruebas</h3><span class="mini">Resultados rápidos</span></span><svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="body"><p>Pruebas diagnósticas para saber qué le pasa a tu mascota cuanto antes, y te mantenemos informado en todo momento.</p></div>
+      </div>
+      <div class="svc reveal">
+        <button aria-expanded="false"><span class="ico">🏥</span><span><h3>Cirugía</h3><span class="mini">Con seguimiento cercano</span></span><svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="body"><p>Intervenciones con preparación previa, información clara sobre cada paso y seguimiento después de la operación.</p></div>
+      </div>
+      <div class="svc reveal">
+        <button aria-expanded="false"><span class="ico">🐾</span><span><h3>Mascotas mayores</h3><span class="mini">Cuidado en cada etapa</span></span><svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="body"><p>Muchos de nuestros pacientes llevan con nosotros toda la vida. Adaptamos revisiones y tratamientos para que envejezcan con calidad de vida.</p></div>
+      </div>
+      <div class="svc reveal">
+        <button aria-expanded="false"><span class="ico">🚑</span><span><h3>Urgencias en horario</h3><span class="mini">Llámanos y te decimos qué hacer</span></span><svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="body"><p>Si tu mascota se pone mala durante nuestro horario, llámanos al <a href="tel:+34918169834"><b>918 16 98 34</b></a> y haremos lo posible por atenderla cuanto antes.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CALCULADORA ============ -->
+<section style="background:var(--arena)">
+  <div class="wrap calc-wrap">
+    <div>
+      <span class="eyebrow reveal">Juega un momento</span>
+      <h2 class="sec-title reveal">¿Cuántos años “humanos” tiene tu mascota?</h2>
+      <p class="sec-sub reveal">Mueve la barra y descúbrelo. Cada etapa de la vida necesita cuidados distintos.</p>
+    </div>
+    <div class="calc reveal">
+      <div class="seg" role="tablist">
+        <button class="on" data-pet="perro" role="tab" aria-selected="true">🐶 Perro</button>
+        <button data-pet="gato" role="tab" aria-selected="false">🐱 Gato</button>
+      </div>
+      <div class="sizes" id="sizes">
+        <button class="chip on" data-size="peq">Pequeño</button>
+        <button class="chip" data-size="med">Mediano</button>
+        <button class="chip" data-size="gra">Grande</button>
+      </div>
+      <div class="range-row">
+        <label for="age"><span>Edad real</span><span id="ageLbl">3 años</span></label>
+        <input id="age" type="range" min="1" max="20" value="3">
+      </div>
+      <div class="result">
+        <span class="num" id="human">28</span>
+        <div class="stage" id="stage">años humanos · Adulto joven</div>
+        <div class="tip" id="tip">Revisión anual y vacunas al día.</div>
+      </div>
+      <p class="disclaimer">Cálculo orientativo. Para saber cómo está tu mascota, pide una revisión.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OPINIONES ============ -->
+<!-- Opiniones reales publicadas en Google Maps (extractos). Pedir permiso a la clínica antes de publicarlas. -->
+<section id="opiniones">
+  <div class="wrap">
+    <div class="reviews-head">
+      <div>
+        <span class="eyebrow reveal">Lo que dicen de nosotros</span>
+        <h2 class="sec-title reveal">367 familias ya nos han valorado</h2>
+      </div>
+      <div class="score reveal">
+        <b>4,6</b>
+        <div><span class="stars">★★★★★</span><small>Media en Google</small></div>
+      </div>
+    </div>
+
+    <div class="bars reveal" id="bars">
+      <div class="bar">5★<i style="--w:83%"></i>305</div>
+      <div class="bar">4★<i style="--w:8%"></i>29</div>
+      <div class="bar">3★<i style="--w:2%"></i>6</div>
+      <div class="bar">2★<i style="--w:1%"></i>2</div>
+      <div class="bar">1★<i style="--w:7%"></i>25</div>
+    </div>
+
+    <div class="slider" id="slider">
+      <article class="review">
+        <span class="stars">★★★★★</span>
+        <p>“Mi perrita tiene 16 años y desde el primer día la atención es de 10. Se nota la pasión y las ganas de ayudar a los animales. Es MI CLÍNICA DE CONFIANZA.”</p>
+        <div class="who"><span class="avatar" style="background:#14796a">S</span><div><b>Sonia D.</b><small>Reseña en Google</small></div></div>
+      </article>
+      <article class="review">
+        <span class="stars">★★★★★</span>
+        <p>“Alrededor de 22 años utilizando sus servicios y da gusto ir, porque te atienden como de la casa. 4 animales atendidos por ellos y todo fenomenal.”</p>
+        <div class="who"><span class="avatar" style="background:#ff7a59">M</span><div><b>Mónica A.</b><small>Reseña en Google</small></div></div>
+      </article>
+      <article class="review">
+        <span class="stars">★★★★★</span>
+        <p>“Nos han tratado, explicado y comunicado en todo momento el estado de nuestro Sulley. Todo ha sido muy rápido: pruebas, resultados y diagnósticos. GRACIAS.”</p>
+        <div class="who"><span class="avatar" style="background:#8a6bd1">C</span><div><b>Carlos y Betty R.</b><small>Reseña en Google</small></div></div>
+      </article>
+      <article class="review">
+        <span class="stars">★★★★★</span>
+        <p>“Siempre me buscan un buen horario y la manera de atender a nuestras mascotas es profesional y atenta. He ido a otros veterinarios y ninguno tan bien como ellos.”</p>
+        <div class="who"><span class="avatar" style="background:#e0a100">P</span><div><b>Paqui S.</b><small>Reseña en Google</small></div></div>
+      </article>
+    </div>
+    <div class="dots" id="dots" aria-label="Cambiar opinión"></div>
+  </div>
+</section>
+
+<!-- ============ EQUIPO ============ -->
+<!-- Nombres sacados de las reseñas. CONFIRMAR nombres y cargos, y poner fotos reales si las hay. -->
+<section style="padding-top:10px">
+  <div class="wrap">
+    <span class="eyebrow reveal">El equipo</span>
+    <h2 class="sec-title reveal">Caras conocidas para tu mascota</h2>
+    <div class="team">
+      <div class="member reveal"><div class="ph" style="background:linear-gradient(140deg,#14796a,#0f5c4d)">C</div><b>Consuelo</b><small>Veterinaria</small></div>
+      <div class="member reveal"><div class="ph" style="background:linear-gradient(140deg,#ff9a7a,#ff7a59)">A</div><b>Alejandro</b><small>Veterinario</small></div>
+      <div class="member reveal"><div class="ph" style="background:linear-gradient(140deg,#a58be0,#8a6bd1)">R</div><b>Rosa</b><small>Equipo</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISÍTANOS ============ -->
+<section id="visitanos">
+  <div class="wrap">
+    <span class="eyebrow reveal">Visítanos</span>
+    <h2 class="sec-title reveal">En pleno centro, en la Calle Real</h2>
+    <div class="visit">
+      <div class="card reveal">
+        <div class="addr">
+          <span class="ic">📍</span>
+          <div><b>Calle Real, 52</b><br><span style="color:var(--gris)">28991 Torrejón de la Calzada, Madrid</span></div>
+        </div>
+        <ul class="hours" id="hours" style="margin-top:18px"></ul>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="tel:+34918169834">Llamar · 918 16 98 34</a>
+          <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Cl%C3%ADnica%20Veterinaria%20Argos%2C%20Calle%20Real%2052%2C%20Torrej%C3%B3n%20de%20la%20Calzada">Abrir en Google Maps</a>
+        </div>
+      </div>
+      <div class="map reveal">
+        <iframe title="Mapa de Clínica Veterinaria Argos" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=Cl%C3%ADnica%20Veterinaria%20Argos%2C%20Calle%20Real%2052%2C%2028991%20Torrej%C3%B3n%20de%20la%20Calzada&z=16&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<!-- CONFIRMAR respuestas con la clínica. -->
+<section id="faq" style="padding-top:20px">
+  <div class="wrap">
+    <span class="eyebrow reveal">Preguntas frecuentes</span>
+    <h2 class="sec-title reveal">Antes de venir</h2>
+    <div class="faq">
+      <details class="reveal"><summary>¿Necesito pedir cita?</summary><p>Te recomendamos llamar antes al 918 16 98 34 para darte hora y que no tengas que esperar.</p></details>
+      <details class="reveal"><summary>¿Qué hago si mi mascota tiene una urgencia?</summary><p>Llámanos en cuanto puedas. Si estamos dentro del horario, te diremos cómo actuar y te atenderemos lo antes posible.</p></details>
+      <details class="reveal"><summary>¿Cuándo debo vacunar a mi cachorro o gatito?</summary><p>Las primeras vacunas suelen ponerse en las primeras semanas de vida. Tráelo en cuanto llegue a casa y te preparamos su calendario personalizado.</p></details>
+      <details class="reveal"><summary>¿Atendéis a mascotas mayores?</summary><p>Sí. Muchos de nuestros pacientes llevan con nosotros toda su vida y adaptamos las revisiones a cada etapa.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section style="padding-top:10px">
+  <div class="wrap">
+    <div class="final reveal">
+      <h2>¿Le toca revisión a tu mascota?</h2>
+      <p>Llámanos y te buscamos un hueco que te venga bien.</p>
+      <a class="btn btn-ghost" href="tel:+34918169834">📞 918 16 98 34</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <b style="color:var(--verde);font-family:'Fraunces',serif;font-size:1.1rem">Clínica Veterinaria Argos</b><br>
+    Calle Real, 52 · 28991 Torrejón de la Calzada (Madrid) · <a href="tel:+34918169834">918 16 98 34</a><br>
+    <span style="font-size:.78rem">© <span id="yr"></span> Clínica Veterinaria Argos</span>
+  </div>
+</footer>
+
+<!-- Barra fija para móvil -->
+<div class="dock" id="dock">
+  <a class="btn btn-primary" href="tel:+34918169834">📞 Llamar</a>
+  <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Cl%C3%ADnica%20Veterinaria%20Argos%2C%20Calle%20Real%2052%2C%20Torrej%C3%B3n%20de%20la%20Calzada">📍 Cómo llegar</a>
+</div>
+
+<script>
+(function(){
+  /* ---------- Horario (hora de Madrid) ---------- */
+  // 0 = domingo ... 6 = sábado. Tramos en minutos desde las 00:00.
+  var H = {
+    1:[[600,780],[1020,1170]], 2:[[600,780],[1020,1170]], 3:[[600,780],[1020,1170]],
+    4:[[600,780],[1020,1170]], 5:[[600,780],[1020,1170]], 6:[[600,720]], 0:[]
+  };
+  var NAMES = ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
+  function fmt(m){var h=Math.floor(m/60),mi=m%60;return h+":"+(mi<10?"0":"")+mi}
+  function madridNow(){
+    try{
+      var p = new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Madrid",weekday:"short",hour:"2-digit",minute:"2-digit",hour12:false}).formatToParts(new Date());
+      var o={};p.forEach(function(x){o[x.type]=x.value});
+      var days={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6};
+      return {d:days[o.weekday], m:(parseInt(o.hour,10)%24)*60+parseInt(o.minute,10)};
+    }catch(e){var n=new Date();return {d:n.getDay(),m:n.getHours()*60+n.getMinutes()}}
+  }
+  function status(){
+    var n=madridNow(), today=H[n.d];
+    for(var i=0;i<today.length;i++){
+      if(n.m>=today[i][0] && n.m<today[i][1]) return {open:true,txt:"Abierto · cierra a las "+fmt(today[i][1])};
+    }
+    for(var j=0;j<today.length;j++){ if(n.m<today[j][0]) return {open:false,txt:"Cerrado · abre a las "+fmt(today[j][0])}; }
+    for(var k=1;k<=7;k++){
+      var d=(n.d+k)%7;
+      if(H[d].length){ return {open:false,txt:"Cerrado · abre "+(k===1?"mañana":NAMES[d].toLowerCase())+" a las "+fmt(H[d][0][0])}; }
+    }
+    return {open:false,txt:"Cerrado"};
+  }
+  var st=document.getElementById("status");
+  function paint(){
+    var s=status();
+    st.className="status-pill "+(s.open?"open":"closed");
+    st.querySelector(".txt").textContent=s.open?"Abierto ahora":"Cerrado ahora";
+    st.title=s.txt;
+    var hl=document.getElementById("hours"); if(!hl) return;
+    var today=madridNow().d, html="";
+    [1,2,3,4,5,6,0].forEach(function(d){
+      var t=H[d].length?H[d].map(function(r){return fmt(r[0])+"–"+fmt(r[1])}).join("<br>"):"Cerrado";
+      html+='<li'+(d===today?' class="today"':'')+'><span>'+NAMES[d]+(d===today?' <em class="hoy">HOY</em>':'')+'</span><span>'+t+'</span></li>';
+    });
+    hl.innerHTML=html+'<li style="background:transparent;justify-content:center;color:var(--gris);font-size:.88rem">'+s.txt+'</li>';
+  }
+  paint(); setInterval(paint,60000);
+
+  /* ---------- Huellas del hero ---------- */
+  var paws=document.getElementById("paws");
+  var pawSvg='<svg class="paw" viewBox="0 0 64 64"><ellipse cx="18" cy="22" rx="6" ry="8"/><ellipse cx="46" cy="22" rx="6" ry="8"/><ellipse cx="8" cy="36" rx="5" ry="7"/><ellipse cx="56" cy="36" rx="5" ry="7"/><path d="M32 30c-9 0-17 12-17 19 0 6 5 8 9 7 3-1 5-2 8-2s5 1 8 2c4 1 9-1 9-7 0-7-8-19-17-19z"/></svg>';
+  for(var i=0;i<9;i++){
+    var w=document.createElement("div"); w.innerHTML=pawSvg; var el=w.firstChild;
+    el.style.left=(8+i*10)+"%"; el.style.top=(85-i*9+(i%2?6:-6))+"%";
+    el.style.transform="rotate("+(30+i*4)+"deg)"; el.style.animationDelay=(i*0.45)+"s";
+    paws.appendChild(el);
+  }
+
+  /* ---------- Aparición al hacer scroll + contadores ---------- */
+  function countUp(el){
+    var to=parseFloat(el.dataset.count), dec=parseInt(el.dataset.dec||"0",10), pre=el.dataset.prefix||"", t0=null, dur=1300;
+    function step(ts){ if(!t0)t0=ts; var p=Math.min((ts-t0)/dur,1), e=1-Math.pow(1-p,3);
+      el.textContent=pre+(to*e).toFixed(dec).replace(".",","); if(p<1)requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  }
+  var io=("IntersectionObserver" in window)?new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){
+      e.target.classList.add("in");
+      if(e.target.id==="bars") e.target.classList.add("go");
+      e.target.querySelectorAll && e.target.querySelectorAll("[data-count]").forEach(function(c){ if(!c.dataset.done){c.dataset.done=1;countUp(c);} });
+      io.unobserve(e.target);
+    }});
+  },{threshold:.15}):null;
+  document.querySelectorAll(".reveal").forEach(function(el){ io?io.observe(el):el.classList.add("in","go"); });
+
+  /* ---------- Servicios desplegables ---------- */
+  document.querySelectorAll(".svc button").forEach(function(b){
+    b.addEventListener("click",function(){
+      var card=b.parentElement, body=card.querySelector(".body"), open=card.classList.toggle("open");
+      b.setAttribute("aria-expanded",open);
+      body.style.maxHeight=open?body.scrollHeight+"px":"0";
+    });
+  });
+
+  /* ---------- Carrusel de opiniones ---------- */
+  var slider=document.getElementById("slider"), dots=document.getElementById("dots"), cards=slider.querySelectorAll(".review");
+  cards.forEach(function(c,i){
+    var d=document.createElement("button"); d.setAttribute("aria-label","Opinión "+(i+1));
+    d.onclick=function(){ slider.scrollTo({left:c.offsetLeft-slider.offsetLeft-20,behavior:"smooth"}); };
+    dots.appendChild(d);
+  });
+  function activeDot(){
+    var center=slider.scrollLeft+slider.clientWidth/2, best=0, bd=1e9;
+    cards.forEach(function(c,i){ var cc=c.offsetLeft-slider.offsetLeft+c.clientWidth/2, dd=Math.abs(cc-center); if(dd<bd){bd=dd;best=i;} });
+    dots.querySelectorAll("button").forEach(function(b,i){ b.classList.toggle("on",i===best); });
+    return best;
+  }
+  slider.addEventListener("scroll",function(){ window.requestAnimationFrame(activeDot); },{passive:true});
+  activeDot();
+  var auto=setInterval(function(){
+    var next=(activeDot()+1)%cards.length;
+    slider.scrollTo({left:cards[next].offsetLeft-slider.offsetLeft-20,behavior:"smooth"});
+  },5000);
+  ["touchstart","mousedown"].forEach(function(ev){ slider.addEventListener(ev,function(){ clearInterval(auto); },{passive:true}); });
+
+  /* ---------- Calculadora de edad ---------- */
+  var pet="perro", size="peq", age=document.getElementById("age");
+  function human(y){
+    if(pet==="gato"){ return y===1?15:y===2?24:24+(y-2)*4; }
+    var extra={peq:4,med:5,gra:6}[size];
+    return y===1?15:y===2?24:24+(y-2)*extra;
+  }
+  function calc(){
+    var y=parseInt(age.value,10), h=human(y);
+    document.getElementById("ageLbl").textContent=y+(y===1?" año":" años");
+    var num=document.getElementById("human"); num.textContent=h;
+    num.animate && num.animate([{transform:"scale(1.15)"},{transform:"scale(1)"}],{duration:250});
+    var stage, tip;
+    if(h<20){stage="Cachorro / joven"; tip="Época de vacunas, desparasitación y buenos hábitos.";}
+    else if(h<45){stage="Adulto joven"; tip="Revisión anual y vacunas al día.";}
+    else if(h<60){stage="Adulto"; tip="Buen momento para una analítica de control.";}
+    else {stage="Senior"; tip="Recomendamos revisiones más frecuentes para cuidar su calidad de vida.";}
+    document.getElementById("stage").textContent="años humanos · "+stage;
+    document.getElementById("tip").textContent=tip;
+  }
+  document.querySelectorAll(".seg button").forEach(function(b){
+    b.onclick=function(){
+      document.querySelectorAll(".seg button").forEach(function(x){x.classList.remove("on");x.setAttribute("aria-selected","false")});
+      b.classList.add("on"); b.setAttribute("aria-selected","true"); pet=b.dataset.pet;
+      document.getElementById("sizes").style.display=pet==="perro"?"flex":"none"; calc();
+    };
+  });
+  document.querySelectorAll(".chip").forEach(function(b){
+    b.onclick=function(){ document.querySelectorAll(".chip").forEach(function(x){x.classList.remove("on")}); b.classList.add("on"); size=b.dataset.size; calc(); };
+  });
+  age.addEventListener("input",calc); calc();
+
+  /* ---------- Barra fija del móvil ---------- */
+  var dock=document.getElementById("dock");
+  window.addEventListener("scroll",function(){ dock.classList.toggle("show",window.scrollY>380); },{passive:true});
+
+  document.getElementById("yr").textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
